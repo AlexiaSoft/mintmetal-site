@@ -1,1 +1,953 @@
-hello
+﻿<!doctype html>
+<html lang="th-TH">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7fafc" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <title>MINT METAL | ERP สำหรับธุรกิจและโรงงานเมทัลชีท</title>
+  <meta name="description"
+    content="MINT METAL ERP สำหรับธุรกิจเมทัลชีทและโรงงานแปรรูปเหล็ก เชื่อมงานขาย ใบเสนอราคา จัดซื้อ คลังวัตถุดิบ Coil / Sheet การผลิต และส่งมอบ พร้อมรองรับสินค้าตามสเปกแต่ละ Order" />
+  <link rel="canonical" href="https://mintmetal.alexiasoft.co/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="th_TH" />
+  <meta property="og:site_name" content="MINT METAL by AlexiaSoft" />
+  <meta property="og:url" content="https://mintmetal.alexiasoft.co/" />
+  <meta property="og:title" content="MINT METAL | ERP สำหรับธุรกิจและโรงงานเมทัลชีท" />
+  <meta property="og:description"
+    content="MINT METAL ERP สำหรับธุรกิจเมทัลชีทและโรงงานแปรรูปเหล็ก เชื่อมงานขาย ใบเสนอราคา จัดซื้อ คลังวัตถุดิบ Coil / Sheet การผลิต และส่งมอบ พร้อมรองรับสินค้าตามสเปกแต่ละ Order" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="MINT METAL | ERP สำหรับธุรกิจและโรงงานเมทัลชีท" />
+  <meta name="twitter:description"
+    content="MINT METAL ERP สำหรับธุรกิจเมทัลชีทและโรงงานแปรรูปเหล็ก เชื่อมงานขาย ใบเสนอราคา จัดซื้อ คลังวัตถุดิบ Coil / Sheet การผลิต และส่งมอบ" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/images/mint-icon-192.png" />
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://alexiasoft.co/#organization",
+            "name": "AlexiaSoft Company Limited",
+            "url": "https://alexiasoft.co/",
+            "email": "sale@alexiasoft.co",
+            "telephone": "+66-61-697-5959"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mintmetal.alexiasoft.co/#website",
+            "url": "https://mintmetal.alexiasoft.co/",
+            "name": "MINT METAL by AlexiaSoft",
+            "inLanguage": "th-TH",
+            "publisher": { "@id": "https://alexiasoft.co/#organization" }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "MINT METAL",
+            "url": "https://mintmetal.alexiasoft.co/",
+            "applicationCategory": "BusinessApplication",
+            "inLanguage": "th-TH",
+            "description": "MINT METAL ERP สำหรับธุรกิจเมทัลชีทและโรงงานแปรรูปเหล็ก เชื่อมงานขาย ใบเสนอราคา จัดซื้อ คลังวัตถุดิบ Coil / Sheet การผลิต และส่งมอบ พร้อมรองรับสินค้าตามสเปกแต่ละ Order",
+            "provider": { "@id": "https://alexiasoft.co/#organization" }
+          }
+        ]
+      }
+    </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Subscription กับ License ต่างกันอย่างไร?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Subscription เลือกชำระรายเดือนหรือรายปีได้ โดยแพ็กเกจรายปีประหยัดเทียบเท่า 2 เดือน รวม Cloud Hosting, Backup, MA และ Support ตามขอบเขตบริการ ส่วน License เป็นการซื้อสิทธิ์ใช้งานตามสัญญา ไม่รวม Hosting / Server / Infrastructure โดยรวม MA ปีแรก และเริ่มคิด MA ตั้งแต่ปีที่ 2 ตามข้อตกลงบริการ" }
+        },
+        {
+          "@type": "Question",
+          "name": "Starter กับ Business ต่างกันอย่างไร?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Starter คือ Core ERP ส่วน Business รวม Starter กับ 3 กลุ่ม Add-on ได้แก่ Maintenance + Asset, Logistics + Logistics App และ Factory + Factory App เหมาะกับโรงงานที่ต้องการเชื่อมงานปฏิบัติการ" }
+        },
+        {
+          "@type": "Question",
+          "name": "Starter สามารถซื้อ Add-on เพิ่มได้ไหม?",
+          "acceptedAnswer": { "@type": "Answer", "text": "ได้ โดยเลือกเพิ่ม Maintenance + Asset, Logistics + Logistics App หรือ Factory + Factory App ส่วน Business รวม Add-on ทั้ง 3 กลุ่มแล้ว" }
+        },
+        {
+          "@type": "Question",
+          "name": "ค่าติดตั้งและ Customize คิดอย่างไร?",
+          "acceptedAnswer": { "@type": "Answer", "text": "ค่าติดตั้งและตั้งค่าระบบคิดแยกจากราคาแพ็กเกจ ส่วน Customize, Integration, Data Migration และงานพัฒนาเฉพาะประเมินตามขอบเขตโครงการและยืนยันในใบเสนอราคา" }
+        },
+        {
+          "@type": "Question",
+          "name": "ถ้าต้องการเพิ่ม User / Branch / Warehouse คิดอย่างไร?",
+          "acceptedAnswer": { "@type": "Answer", "text": "หากต้องการเพิ่มผู้ใช้ สาขา หรือคลัง สามารถติดต่อฝ่ายขายเพื่อประเมินตามขอบเขตการใช้งาน" }
+        },
+        {
+          "@type": "Question",
+          "name": "รองรับสินค้าและลักษณะงานของโรงงานเมทัลชีทหรือไม่?",
+          "acceptedAnswer": { "@type": "Answer", "text": "MINT METAL ออกแบบมาสำหรับงานเมทัลชีท ครอบคลุมลูกค้าและงานขาย ใบเสนอราคาและคำสั่งขาย จัดซื้อ คลัง Coil / Sheet และการผลิตพื้นฐาน พร้อมเลือกใช้โมดูล Factory, Logistics หรือ Maintenance เพิ่มได้" }
+        }
+      ]
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="MINT METAL หน้าแรก">
+        <img src="assets/images/mintmetal-logo.png" alt="MINT METAL" />
+        <span class="brand-by">by AlexiaSoft</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="เมนูหลัก">
+        <a href="#workflow">ภาพรวม</a>
+        <a href="#screens">ภาพหน้าจอ</a>
+        <a href="#features">ความสามารถ</a>
+        <a href="#pricing">ราคา</a>
+        <a href="#getting-started">เริ่มใช้งาน</a>
+        <a href="#faq">คำถามที่พบบ่อย</a>
+        <a class="button button-small button-primary nav-cta" href="#contact">ขอนัดสาธิต <span
+            aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> MINT METAL ERP</div>
+        <h1>ERP ที่สร้างมาเพื่อธุรกิจเมทัลชีท<br /><span class="gradient-text">Built for Metal Sheet
+            Manufacturing</span></h1>
+        <p class="hero-lead">บริหารงานขาย จัดซื้อ สต๊อก วัตถุดิบ การผลิต และการส่งมอบในระบบเดียว
+          พร้อมรองรับสินค้าสั่งผลิตและสเปกสินค้าที่แตกต่างกันในแต่ละออเดอร์</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">ขอ Demo <span aria-hidden="true">→</span></a>
+          <a class="button button-quiet" href="#features">ดูความสามารถ <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-note"><span aria-hidden="true">✦</span> รองรับสินค้ามาตรฐานและสินค้าตามสเปกของแต่ละ Order</p>
+      </div>
+      <div class="hero-visual reveal" aria-label="ภาพตัวอย่างแนวคิดหน้าภาพรวม MINT METAL ERP ใช้ข้อมูลจำลอง">
+        <div class="visual-glow"></div>
+        <div class="dashboard-window">
+          <div class="window-top">
+            <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>ภาพรวม MINT METAL</span><span
+              class="window-period">ตัวอย่างข้อมูล</span>
+          </div>
+          <div class="dashboard-content">
+            <div class="dashboard-heading">
+              <div><span class="mini-label">MINT METAL · OVERVIEW</span>
+                <h2>ภาพรวมคำสั่งซื้อและการผลิต</h2>
+              </div>
+              <div class="avatar">M</div>
+            </div>
+            <div class="metric-grid">
+              <article class="metric-card"><span>Sales Orders</span><strong>128 <small>รายการ</small></strong><small
+                  class="metric-up">ข้อมูลตัวอย่าง</small>
+                <div class="metric-spark spark-green"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </article>
+              <article class="metric-card"><span>Production Orders</span><strong>36 <small>งาน</small></strong><small
+                  class="metric-neutral">ข้อมูลตัวอย่าง</small>
+                <div class="metric-spark spark-blue"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </article>
+            </div>
+            <div class="dashboard-lower">
+              <div class="chart-card">
+                <div class="chart-title"><strong>ภาพรวมงานผลิต</strong><span>ตัวอย่าง</span></div>
+                <div class="chart-area">
+                  <div class="chart-y"><span>100%</span><span>50%</span><span>0</span></div><svg viewBox="0 0 360 112"
+                    role="img" aria-label="กราฟตัวอย่างสถานะงานผลิต">
+                    <defs>
+                      <linearGradient id="chart-fill" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0" stop-color="#28bd83" stop-opacity=".22" />
+                        <stop offset="1" stop-color="#28bd83" stop-opacity="0" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M0 86 C28 79 31 47 61 57 S94 77 121 62 S151 34 180 46 S215 69 242 45 S278 54 301 29 S337 36 360 13 V112 H0Z"
+                      fill="url(#chart-fill)" />
+                    <path
+                      d="M0 86 C28 79 31 47 61 57 S94 77 121 62 S151 34 180 46 S215 69 242 45 S278 54 301 29 S337 36 360 13"
+                      fill="none" stroke="#19a879" stroke-width="3" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="chart-x">
+                  <span>จ.</span><span>อ.</span><span>พ.</span><span>พฤ.</span><span>ศ.</span><span>ส.</span><span>อา.</span>
+                </div>
+              </div>
+              <div class="work-card">
+                <div class="chart-title"><strong>สต๊อกและงานจัดส่ง</strong><span class="count-pill">2</span></div>
+                <div class="work-row"><i class="work-dot dot-amber"></i><span>วัตถุดิบ Coil / Sheet</span><b>82%</b>
+                </div>
+                <div class="work-row"><i class="work-dot dot-green"></i><span>งานพร้อมจัดส่ง</span><b>12</b></div>
+              </div>
+            </div>
+            <p class="demo-disclaimer">ภาพประกอบข้อมูลสมมติ ไม่ใช่ข้อมูลลูกค้าหรือหน้าจอจริง</p>
+          </div>
+        </div>
+        <div class="float-chip chip-one"><span class="chip-icon green-icon">✓</span><span><b>ติดตามคำสั่งผลิต</b></span>
+        </div>
+        <div class="float-chip chip-two"><span class="chip-icon blue-icon">↗</span><span><b>พร้อมวางแผนส่งมอบ</b></span>
+        </div>
+      </div>
+    </section>
+    <section class="trust-strip" aria-label="ภาพรวมกระบวนการ MINT METAL">
+      <div class="section-shell trust-inner"><span>ONE METAL WORKFLOW</span>
+        <div><b>Customer</b><i>→</i><b>Quotation</b><i>→</i><b>Sales
+            Order</b><i>→</i><b>Purchase</b><i>→</i><b>Inventory</b><i>→</i><b>Production</b><i>→</i><b>Delivery</b>
+        </div><span class="trust-caption">ตั้งแต่รับ Order ถึงส่งมอบ</span>
+      </div>
+    </section>
+    <section class="section section-shell workflow-section" id="workflow">
+      <div class="section-heading reveal"><span class="eyebrow">ONE METAL WORKFLOW</span>
+        <h2>เชื่อมงานตั้งแต่รับความต้องการลูกค้า ไปจนถึงการผลิตและส่งมอบ</h2>
+        <p>เชื่อมกระบวนการ Customer, Quotation, Sales Order, Purchase, Inventory, Production และ Delivery ในภาพรวมเดียว
+        </p>
+      </div>
+      <div class="flow-grid">
+        <article class="flow-card reveal"><span class="flow-step">01 · SALES</span>
+          <div class="flow-icon icon-mint"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="9" cy="8" r="3" />
+              <path d="M3.5 19a5.5 5.5 0 0 1 11 0M16 5.5a3 3 0 0 1 0 5.8M17 14a5 5 0 0 1 3.5 4.8" />
+            </svg></div>
+          <h3>การขายและใบเสนอราคา</h3>
+          <p>จัดการลูกค้า โอกาสการขาย ใบเสนอราคา และคำสั่งซื้อ</p>
+          <ul>
+            <li>CRM / Customer</li>
+            <li>Quotation / Sales Order</li>
+          </ul>
+        </article>
+        <article class="flow-card reveal"><span class="flow-step">02 · PURCHASE</span>
+          <div class="flow-icon icon-blue"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 4h2l2 11h10l2-8H7" />
+              <circle cx="10" cy="19" r="1.5" />
+              <circle cx="17" cy="19" r="1.5" />
+              <path d="M10 7h7M13.5 4v6" />
+            </svg></div>
+          <h3>จัดซื้อและวัตถุดิบ</h3>
+          <p>จัดการ PR / PO ผู้ขาย และการจัดหาวัตถุดิบสำหรับการผลิต</p>
+          <ul>
+            <li>Purchase / PR / PO</li>
+            <li>Supplier / Raw Material</li>
+          </ul>
+        </article>
+        <article class="flow-card reveal"><span class="flow-step">03 · INVENTORY</span>
+          <div class="flow-icon icon-purple"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m3 7 9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4M12 11v10M7.5 5l9 4" />
+            </svg></div>
+          <h3>คลังสินค้าและสต๊อก</h3>
+          <p>ติดตาม Coil, Sheet, วัตถุดิบ สินค้าสำเร็จรูป และการเคลื่อนไหวของสต๊อก</p>
+          <ul>
+            <li>Inventory / Warehouse</li>
+            <li>Coil / Sheet / Stock Movement</li>
+          </ul>
+        </article>
+        <article class="flow-card flow-optional reveal"><span class="flow-step">04 · PRODUCTION</span>
+          <div class="flow-icon icon-amber"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 21V9l6 3V8l6 4V5l6 3v13zM7 17h2m3 0h2m3 0h2" />
+              <path d="M5 5h4M7 3v4" />
+            </svg></div>
+          <h3>การผลิตและติดตามงาน</h3>
+          <p>จัดการงานผลิต สเปกสินค้า สถานะงาน และความพร้อมก่อนส่งมอบ</p>
+          <ul>
+            <li>Production Orders / Product Specification</li>
+            <li>Production Status / Delivery Readiness</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section class="owner-section">
+      <div class="section-shell owner-inner">
+        <div class="owner-copy reveal">
+          <span class="eyebrow">MINT METAL OVERVIEW</span>
+          <h2>มองเห็นทุกขั้นตอนของธุรกิจในที่เดียว<br /><span class="gradient-text">ตั้งแต่ Order ถึงส่งมอบ</span></h2>
+          <p>ติดตามข้อมูลการขาย การจัดซื้อ สต๊อกวัตถุดิบ การผลิต และการส่งมอบจากข้อมูลชุดเดียว
+            ช่วยลดการทำงานซ้ำระหว่างแต่ละฝ่าย</p>
+          <a class="text-link" href="#features">ดูความสามารถของระบบ <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="owner-panels reveal">
+          <article class="owner-panel">
+            <div class="owner-panel-icon purple-icon">↗</div>
+            <div><strong>Sales Overview</strong>
+              <p>ติดตาม Quotation และ Sales Order</p>
+            </div><span class="panel-arrow">↗</span>
+          </article>
+          <article class="owner-panel">
+            <div class="owner-panel-icon blue-icon">▤</div>
+            <div><strong>Purchase Status</strong>
+              <p>ดูสถานะ PR / PO และการจัดหาวัตถุดิบ</p>
+            </div><span class="panel-arrow">↗</span>
+          </article>
+          <article class="owner-panel">
+            <div class="owner-panel-icon green-icon">◫</div>
+            <div><strong>Inventory Status</strong>
+              <p>ติดตาม Coil / Sheet และสต๊อกสินค้า</p>
+            </div><span class="panel-arrow">↗</span>
+          </article>
+          <article class="owner-panel">
+            <div class="owner-panel-icon purple-icon">⚙</div>
+            <div><strong>Production & Delivery Status</strong>
+              <p>ติดตามงานผลิตและความพร้อมส่งมอบ</p>
+            </div><span class="panel-arrow">↗</span>
+          </article>
+          <div class="owner-footnote">ตัวอย่างภาพรวม MINT METAL · ข้อมูลแสดงตามการตั้งค่าและสิทธิ์ผู้ใช้</div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-shell screens-section" id="screens">
+      <div class="section-heading reveal"><span class="eyebrow">MINT METAL ERP</span>
+        <h2>ตัวอย่างหน้าจอระบบ</h2>
+        <p>ภาพรวมการใช้งาน MINT METAL ผ่านหน้าจอตัวอย่างของโปรแกรมหลัก</p>
+      </div>
+      <div class="screen-grid">
+        <figure class="screen-card reveal">
+          <div class="screen-preview" role="img" aria-label="ตัวอย่างหน้าเลือกโปรแกรม MINT METAL">
+            <div class="preview-window mockup-launcher">
+              <div class="mockup-topbar"><strong class="mockup-brand">MINT <span>METAL</span></strong>
+                <div class="mockup-user"><span>สาขา: สำนักงานใหญ่ ▾</span><b>Admin</b><span>Logout</span></div>
+              </div>
+              <div class="mockup-body">
+                <aside class="mockup-sidebar"><b>MINT
+                    METAL</b><span>ภาพรวม</span><span>ข้อมูลหลัก</span><span>รายการงาน</span><span>รายงาน</span><span>ตั้งค่าระบบ</span>
+                </aside>
+                <div class="mockup-content">
+                  <div class="mockup-heading">
+                    <div><small>WORKSPACE</small><strong>เลือกโปรแกรม</strong></div><span>12 โปรแกรม</span>
+                  </div>
+                  <div class="mockup-programs">
+                    <div><i>POS</i><b>POS</b><small>ระบบขายหน้าร้าน</small></div>
+                    <div><i>PU</i><b>Purchase</b><small>จัดซื้อและผู้จำหน่าย</small></div>
+                    <div><i>IV</i><b>INV</b><small>คลังสินค้า</small></div>
+                    <div><i>CR</i><b>CRM</b><small>ลูกค้าและสาขา</small></div>
+                    <div><i>LG</i><b>Logistic</b><small>จัดส่งสินค้า</small></div>
+                    <div><i>LA</i><b>Logistic App</b><small>งานจัดส่งบนมือถือ</small></div>
+                    <div><i>FC</i><b>Factory</b><small>วางแผนการผลิต</small></div>
+                    <div><i>FA</i><b>Factory App</b><small>ติดตามงานผลิต</small></div>
+                    <div><i>MT</i><b>Maintenance</b><small>ซ่อมบำรุงเครื่องจักร</small></div>
+                    <div><i>AS</i><b>Asset</b><small>ทะเบียนทรัพย์สิน</small></div>
+                    <div><i>IA</i><b>Internal Assign</b><small>มอบหมายงานภายใน</small></div>
+                    <div><i>⚙</i><b>Setting</b><small>ตั้งค่าการใช้งาน</small></div>
+                    <div><i>AR</i><b>Accounting Report</b><small>รายงานบัญชี</small></div>
+                    <div><i>BD</i><b>Board</b><small>สรุปภาพรวม</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption><span class="screen-module">PROGRAM LAUNCHER</span>
+            <h3>เลือกโปรแกรมใช้งาน</h3>
+            <p>รวมโมดูลหลักสำหรับทีมขาย คลัง จัดส่ง และโรงงานไว้ในหน้าเดียว</p>
+          </figcaption>
+        </figure>
+        <figure class="screen-card reveal">
+          <div class="screen-preview" role="img" aria-label="ตัวอย่าง Dashboard ยอดขายประจำวันและประจำเดือน">
+            <div class="preview-window mockup-dashboard">
+              <div class="mockup-topbar"><strong class="mockup-brand">MINT <span>METAL</span></strong>
+                <div class="mockup-user"><span>Dashboard</span><b>Admin</b></div>
+              </div>
+              <div class="mockup-body">
+                <aside class="mockup-sidebar"><b>เมนูหลัก</b><span
+                    class="active">Dashboard</span><span>POS</span><span>Purchase</span><span>INV</span><span>CRM</span><span>รายงาน</span>
+                </aside>
+                <div class="mockup-content">
+                  <div class="mockup-heading">
+                    <div><small>OVERVIEW · ข้อมูลตัวอย่าง</small><strong>Dashboard ประจำวัน / เดือน</strong></div>
+                    <span>ตุลาคม 2569 ▾</span>
+                  </div>
+                  <div class="mockup-metrics">
+                    <div><small>SO วันนี้</small><b>24 <em>ใบ</em></b><span>↑ 12% จากเมื่อวาน</span></div>
+                    <div><small>ยอดเงินสด</small><b>฿128,450</b><span>ยอดรับวันนี้</span></div>
+                    <div><small>ยอดขายสด</small><b>฿84,200</b><span>ประจำวัน</span></div>
+                    <div><small>ยอดขายเชื่อ</small><b>฿214,800</b><span>ประจำเดือน</span></div>
+                    <div><small>CN</small><b>฿12,500</b><span>ใบลดหนี้เดือนนี้</span></div>
+                    <div><small>DN</small><b>฿6,200</b><span>ใบเพิ่มหนี้เดือนนี้</span></div>
+                  </div>
+                  <div class="mockup-chart">
+                    <div><b>ยอดขายตามวัน</b><span>เดือนนี้</span></div>
+                    <div class="mockup-bars">
+                      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                    </div><small>1
+                      ต.ค. <span>15 ต.ค.</span> 31 ต.ค.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption><span class="screen-module">DASHBOARD</span>
+            <h3>Dashboard ประจำวัน / เดือน</h3>
+            <p>สรุปยอดขาย ใบสั่งขาย และรายการปรับปรุงยอดด้วยข้อมูลตัวอย่าง</p>
+          </figcaption>
+        </figure>
+        <figure class="screen-card reveal">
+          <div class="screen-preview" role="img" aria-label="ตัวอย่างหน้า CRM รายชื่อลูกค้าและสาขา">
+            <div class="preview-window mockup-crm">
+              <div class="mockup-topbar"><strong class="mockup-brand">MINT <span>METAL</span></strong>
+                <div class="mockup-user"><span>สาขา: ทุกสาขา ▾</span><b>Admin</b></div>
+              </div>
+              <div class="mockup-body">
+                <aside class="mockup-sidebar"><b>CRM</b><span
+                    class="active">รายชื่อลูกค้า</span><span>ผู้ติดต่อ</span><span>โอกาสการขาย</span><span>กิจกรรม</span><span>รายงาน
+                    CRM</span><span>ตั้งค่า</span></aside>
+                <div class="mockup-content">
+                  <div class="mockup-heading">
+                    <div><small>CUSTOMER MANAGEMENT</small><strong>ข้อมูลลูกค้าและสาขา</strong></div><button
+                      type="button">+ เพิ่มลูกค้า</button>
+                  </div>
+                  <div class="mockup-filters"><span>ทุกสาขา ▾</span><span>สถานะ: ทั้งหมด ▾</span><span>ค้นหาชื่อลูกค้า /
+                      จังหวัด⌕</span></div>
+                  <div class="mockup-table">
+                    <div class="mockup-row mockup-th">
+                      <b>รหัส</b><b>ชื่อลูกค้า</b><b>สาขา</b><b>จังหวัด</b><b>วงเงินเครดิต</b><b>สถานะ</b>
+                    </div>
+                    <div class="mockup-row"><span>C-00128</span><b>เมทัลชีท
+                        ขอนแก่น</b><span>สำนักงานใหญ่</span><span>ขอนแก่น</span><span>500,000</span><em>ใช้งาน</em>
+                    </div>
+                    <div class="mockup-row">
+                      <span>C-00142</span><b>รุ่งเรืองวัสดุก่อสร้าง</b><span>หนองเรือ</span><span>ขอนแก่น</span><span>250,000</span><em>ใช้งาน</em>
+                    </div>
+                    <div class="mockup-row">
+                      <span>C-00176</span><b>พิษณุโลกเมทัลโปร</b><span>สาขาเหนือ</span><span>พิษณุโลก</span><span>400,000</span><em>ใช้งาน</em>
+                    </div>
+                    <div class="mockup-row">
+                      <span>C-00203</span><b>สกลนครสตีล</b><span>สาขาอีสาน</span><span>สกลนคร</span><span>300,000</span><em>ใช้งาน</em>
+                    </div>
+                    <div class="mockup-row">
+                      <span>C-00228</span><b>อุตรดิตถ์วัสดุ</b><span>สาขาเหนือ</span><span>อุตรดิตถ์</span><span>180,000</span><em>ใช้งาน</em>
+                    </div>
+                    <div class="mockup-row">
+                      <span>C-00251</span><b>บุรีรัมย์หลังคาเหล็ก</b><span>สาขาอีสาน</span><span>บุรีรัมย์</span><span>350,000</span><em>ใช้งาน</em>
+                    </div>
+                    <div class="mockup-row">
+                      <span>C-00264</span><b>ชัยภูมิค้าเหล็ก</b><span>สาขาอีสาน</span><span>ชัยภูมิ</span><span>220,000</span><em>ใช้งาน</em>
+                    </div>
+                    <div class="mockup-row">
+                      <span>C-00289</span><b>มหาสารคามสตีลเฮ้าส์</b><span>สาขาอีสาน</span><span>มหาสารคาม</span><span>275,000</span><em>ใช้งาน</em>
+                    </div>
+                  </div>
+                  <div class="mockup-pagination">แสดง 1–8 จาก 128 รายการ <span>‹　1　2　3　…　16　›</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption><span class="screen-module">CRM</span>
+            <h3>ข้อมูลลูกค้าและสาขา</h3>
+            <p>ค้นหาและดูแลข้อมูลลูกค้าตามสาขา พร้อมวงเงินและสถานะ</p>
+          </figcaption>
+        </figure>
+        <figure class="screen-card reveal">
+          <div class="screen-preview" role="img" aria-label="ตัวอย่าง Internal Assign สรุปสถานะงานที่มอบหมาย">
+            <div class="preview-window mockup-assign">
+              <div class="mockup-topbar"><strong class="mockup-brand">MINT <span>METAL</span></strong>
+                <div class="mockup-user"><span>สาขา: ทุกสาขา ▾</span><b>Admin</b></div>
+              </div>
+              <div class="mockup-body">
+                <aside class="mockup-sidebar"><b>MINT METAL</b><span>Dashboard</span><span>งานของฉัน</span><span
+                    class="active">Internal Assign</span><span>ปฏิทินงาน</span><span>รายงาน</span></aside>
+                <div class="mockup-content">
+                  <div class="mockup-heading">
+                    <div><small>WORK MANAGEMENT</small><strong>ติดตามงานที่มอบหมาย</strong></div><button type="button">+
+                      สร้างงาน</button>
+                  </div>
+                  <div class="mockup-assignment-cards">
+                    <div><i>▦</i><small>งานทั้งหมด</small><b>3,090</b><span>รายการในระบบ</span></div>
+                    <div><i>↗</i><small>มอบหมายแล้ว</small><b>15</b><span>รอเริ่มดำเนินการ</span></div>
+                    <div><i>◷</i><small>กำลังดำเนินการ</small><b>209</b><span>อยู่ระหว่างทำ</span></div>
+                    <div><i>✓</i><small>เสร็จแล้ว</small><b>2,565</b><span>ปิดงานเรียบร้อย</span></div>
+                  </div>
+                  <div class="mockup-task-list"><b>งานล่าสุด</b>
+                    <div><span
+                        class="mockup-status ongoing"></span><span>ตรวจนับสต๊อกคลังวัตถุดิบ</span><small>คลังสินค้า</small><b>กำลังดำเนินการ</b>
+                    </div>
+                    <div><span class="mockup-status done"></span><span>เตรียมเอกสารส่งมอบ
+                        SO-2481</span><small>ฝ่ายขาย</small><b>เสร็จแล้ว</b></div>
+                    <div><span class="mockup-status waiting"></span><span>ตรวจเช็กเครื่องรีดไลน์
+                        2</span><small>โรงงาน</small><b>มอบหมายแล้ว</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption><span class="screen-module">INTERNAL ASSIGN</span>
+            <h3>ติดตามงานภายใน</h3>
+            <p>เห็นจำนวนงานและความคืบหน้าของทีมในภาพรวมเดียว</p>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="screen-disclaimer">หน้าจอทั้งหมดเป็น Landing Page mockup เพื่อแสดงแนวทางการใช้งาน ไม่ใช่ระบบจริง
+        และใช้ข้อมูลสมมติ</p>
+    </section>
+    <section class="section section-shell features-section" id="features">
+      <div class="section-heading reveal">
+        <span class="eyebrow">BUILT AROUND YOUR WORK</span>
+        <h2>ความสามารถสำหรับธุรกิจเมทัลชีท<br />ตั้งแต่ลูกค้าถึงการส่งมอบ</h2>
+        <p>รองรับการขาย จัดซื้อ คลังวัตถุดิบ และการผลิต รวมถึงสินค้ามาตรฐานและสินค้ากำหนดสเปกตามแต่ละ Order</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">01 · CRM & CUSTOMER</span><span class="feature-symbol"><svg
+                class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="8" r="3" />
+                <path d="M3.5 19v-1.5A4.5 4.5 0 0 1 8 13h2a4.5 4.5 0 0 1 4.5 4.5V19" />
+                <path d="M16 5.5a3 3 0 0 1 0 5.8M17 13a4 4 0 0 1 3.5 4v2" />
+              </svg></span>
+          </div>
+          <h3>CRM & Customer</h3>
+          <p>จัดการข้อมูลลูกค้า โอกาสการขาย และประวัติการติดต่อ</p>
+          <div class="feature-tags"><span>Customer</span><span>Sales Pipeline</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">02 · QUOTATION & SALES</span><span class="feature-symbol"><svg
+                class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="2.5" width="6" height="5" rx="1" />
+                <rect x="2" y="16.5" width="6" height="5" rx="1" />
+                <rect x="16" y="16.5" width="6" height="5" rx="1" />
+                <path d="M12 7.5v4M5 16.5v-5h14v5" />
+              </svg></span>
+          </div>
+          <h3>Quotation & Sales</h3>
+          <p>สร้างใบเสนอราคาและเชื่อมต่อไปยังคำสั่งซื้อ</p>
+          <div class="feature-tags"><span>Quotation</span><span>Sales Order</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">03 · PURCHASE</span><span class="feature-symbol"><svg class="feature-icon"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="16" rx="2" />
+                <path d="M7 3v4M17 3v4M3 10h18M8 15h3m3 0h2M8 18h3" />
+              </svg></span>
+          </div>
+          <h3>Purchase / PR / PO</h3>
+          <p>จัดการคำขอซื้อ ใบสั่งซื้อ และ Supplier</p>
+          <div class="feature-tags"><span>PR / PO</span><span>Supplier</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">04 · INVENTORY</span><span class="feature-symbol"><svg class="feature-icon"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="13" r="8" />
+                <path d="M12 8v5l3 2M9 2h6" />
+              </svg></span>
+          </div>
+          <h3>Inventory & Warehouse</h3>
+          <p>ควบคุมสต๊อกและคลังสินค้า พร้อมติดตามการเคลื่อนไหวของสินค้า</p>
+          <div class="feature-tags"><span>Warehouse</span><span>Stock Movement</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">05 · COIL & SHEET</span><span class="feature-symbol"><svg class="feature-icon"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="4" y="3" width="16" height="18" rx="2" />
+                <path d="M8 3v4M16 3v4M4 9h16m-12 6 2.5 2.5L16 12" />
+              </svg></span>
+          </div>
+          <h3>Coil & Sheet Management</h3>
+          <p>ติดตามวัตถุดิบ Coil / Sheet และข้อมูลที่เกี่ยวข้องกับการจัดเก็บ</p>
+          <div class="feature-tags"><span>Raw Material</span><span>Coil / Sheet</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">06 · PRODUCT SPEC</span><span class="feature-symbol"><svg class="feature-icon"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 20h18M5 20V8l7-4 7 4v12M9 12h6M12 9v6" />
+                <path d="M8 20v-3h8v3" />
+              </svg></span>
+          </div>
+          <h3>Product Specification</h3>
+          <p>กำหนด Material, Thickness, Width, Length, Color และ Profile / Sheet Type ตามแต่ละ Order</p>
+          <div class="feature-tags"><span>Custom Specification</span><span>Order-based</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">07 · PRODUCTION</span><span class="feature-symbol"><svg class="feature-icon"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="15" rx="2" />
+                <path d="M3 9h18M7 15h4m3 0h3" />
+              </svg></span>
+          </div>
+          <h3>Production Management</h3>
+          <p>บริหารงานผลิตและติดตามสถานะการผลิต</p>
+          <div class="feature-tags"><span>Production Order</span><span>Production Status</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">08 · COST & DOCUMENT</span><span class="feature-symbol"><svg
+                class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 3h10l4 4v14H5zM15 3v5h4M8 12h7M8 16l2 2 5-5" />
+              </svg></span>
+          </div>
+          <h3>Cost & Document</h3>
+          <p>จัดการข้อมูลต้นทุนและเอกสารที่เกี่ยวข้องกับกระบวนการ</p>
+          <div class="feature-tags"><span>Cost</span><span>Documents</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">09 · DASHBOARD & REPORT</span><span class="feature-symbol"><svg
+                class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 3h10l4 4v14H5zM15 3v5h4M8 12h8M8 16h8M8 19h5" />
+              </svg></span>
+          </div>
+          <h3>Dashboard & Reports</h3>
+          <p>สรุปข้อมูลสำคัญเพื่อช่วยติดตามการทำงาน</p>
+          <div class="feature-tags"><span>Dashboard</span><span>Reports</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">10 · MAINTENANCE & ASSET</span><span class="feature-symbol"><svg
+                class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 5.5c3-1.2 6-1.2 9 .5 3-1.7 6-1.7 9-.5v13c-3-1.2-6-1.2-9 .5-3-1.7-6-1.7-9-.5zM12 6v13" />
+              </svg></span>
+          </div>
+          <h3>Maintenance & Asset</h3>
+          <p>จัดการเครื่องจักร การซ่อมบำรุง และทรัพย์สิน</p>
+          <div class="feature-tags"><span>Preventive Maintenance</span><span>Business</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">11 · LOGISTICS</span><span class="feature-symbol"><svg class="feature-icon"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="4" y="10" width="16" height="11" rx="2" />
+                <path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3" />
+              </svg></span>
+          </div>
+          <h3>Logistics & Logistics App</h3>
+          <p>จัดการงานจัดส่ง รถ คนขับ และการทำงานผ่าน Logistics App</p>
+          <div class="feature-tags"><span>Delivery</span><span>Business</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">12 · FACTORY</span><span class="feature-symbol"><svg class="feature-icon"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M3 9h18M9 9v12M13 16l2-2 2 2 2-4" />
+              </svg></span>
+          </div>
+          <h3>Factory & Factory App</h3>
+          <p>ติดตามและอัปเดตงานจากหน้างานโรงงาน</p>
+          <div class="feature-tags"><span>Factory Operations</span><span>Business</span></div>
+        </article>
+      </div>
+      <p class="feature-disclaimer">
+        ความสามารถที่ใช้งานได้ขึ้นกับการตั้งค่า และขอบเขตโครงการที่ตกลงกัน
+      </p>
+    </section>
+
+    <section class="section section-shell pricing-section" id="pricing">
+      <header class="pricing-intro reveal"><span class="eyebrow">PRICING</span>
+        <h2>เลือกรูปแบบ MINT METAL ที่เหมาะกับโรงงานของคุณ</h2>
+        <p>เลือกแพ็กเกจ Starter หรือ Business และรูปแบบชำระค่าซอฟต์แวร์ตามขอบเขตการใช้งาน</p>
+      </header>
+      <div class="pricing-billing-grid">
+        <div class="pricing-billing-block pricing-parent-panel">
+          <div class="pricing-comparison-intro pricing-group-heading">
+            <div>
+              <p class="pricing-model-label">HOSTED · STANDARD</p>
+              <h3>Subscription</h3>
+            </div>
+            <span class="pricing-heading-badge">Cloud Hosting</span>
+          </div>
+          <p class="pricing-billing-description">ใช้งานระบบ ERP สำหรับธุรกิจเหล็กและเมทัลชีทผ่าน Cloud Hosting
+            ที่ดูแลโดย AlexiaSoft พร้อมสำรองข้อมูล อัปเดตระบบมาตรฐาน และ Support ในวัน/เวลาทำการ</p>
+          <div class="pricing-plan-grid pricing-plan-grid--packages">
+            <article class="pricing-plan pricing-plan--business reveal">
+              <div class="pricing-plan__head">
+                <div>
+                  <h3>Starter</h3><span class="pricing-plan__chip">Subscription · Hosted</span>
+                </div>
+              </div>
+              <p class="pricing-plan__summary">Core ERP สำหรับงานขาย จัดซื้อ คลังสินค้า และการผลิตพื้นฐาน</p>
+              <div class="pricing-plan__price"><span class="pricing-plan__price-label">ราคาเริ่มต้น</span>
+                <div class="pricing-plan__price-main"><strong>8,900</strong><span>บาท / เดือน</span></div>
+                <p class="pricing-plan__annual">หรือ ฿89,000 / ปี · ลด 2 เดือน</p>
+              </div>
+              <ul class="pricing-plan__features">
+                <li>POS / CRM / Customer / Sales</li>
+                <li>Quotation / Sales Order</li>
+                <li>Purchase / PR / PO / Supplier</li>
+                <li>Inventory / Warehouse / Coil / Sheet</li>
+                <li>Basic Production / Internal Work Management</li>
+                <li>Dashboard / Report / User / Permission</li>
+              </ul><a class="button button-quiet pricing-plan__cta" href="#contact">ขอ Demo <span
+                  aria-hidden="true">↗</span></a>
+            </article>
+            <article class="pricing-plan pricing-plan--enterprise is-recommended reveal">
+              <div class="pricing-plan__recommended"><span class="pricing-plan__recommend-text">รวม Add-on 3
+                  กลุ่ม</span><span class="pricing-plan__recommend-icon" aria-hidden="true">✓</span></div>
+              <div class="pricing-plan__head">
+                <div>
+                  <h3>Business</h3><span class="pricing-plan__chip">Subscription · Hosted</span>
+                </div>
+              </div>
+              <p class="pricing-plan__summary">เหมาะสำหรับโรงงานที่ต้องการเชื่อมงานหลักและงานปฏิบัติการในระบบเดียว</p>
+              <div class="pricing-plan__price"><span class="pricing-plan__price-label">ราคาเริ่มต้น</span>
+                <div class="pricing-plan__price-main"><strong>15,900</strong><span>บาท / เดือน</span></div>
+                <p class="pricing-plan__annual">หรือ ฿159,000 / ปี · ลด 2 เดือน</p>
+              </div>
+              <ul class="pricing-plan__features">
+                <li>ทุกฟังก์ชันใน Starter</li>
+                <li>Maintenance + Asset</li>
+                <li>Logistics + Logistics App</li>
+                <li>Factory + Factory App</li>
+              </ul><a class="button button-primary pricing-plan__cta" href="#contact">ขอ Demo <span
+                  aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+          <p class="pricing-panel-footnote">ค่าติดตั้งแยกต่างหาก · รวม Cloud Hosting, Backup, MA และ Support
+            ตามขอบเขตบริการ</p>
+        </div>
+        <div class="pricing-billing-block pricing-parent-panel">
+          <div class="pricing-comparison-intro pricing-group-heading">
+            <div>
+              <p class="pricing-model-label">LICENSE · PROJECT SCOPE</p>
+              <h3>License + Customize</h3>
+            </div>
+            <span class="pricing-heading-badge">Project Scope</span>
+          </div>
+          <p class="pricing-billing-description">ซื้อสิทธิ์ใช้งาน MINT METAL ตามสัญญา
+            ติดตั้งบนโครงสร้างพื้นฐานที่ตกลงร่วมกัน และประเมินงานปรับแต่งตามขอบเขตโครงการ</p>
+          <div class="pricing-plan-grid pricing-plan-grid--packages">
+            <article class="pricing-plan pricing-plan--business reveal">
+              <div class="pricing-plan__head">
+                <div>
+                  <h3>Starter</h3><span class="pricing-plan__chip">License</span>
+                </div>
+              </div>
+              <p class="pricing-plan__summary">สิทธิ์ใช้งาน MINT METAL ตามขอบเขต Starter</p>
+              <div class="pricing-plan__price"><span class="pricing-plan__price-label">ราคาเริ่มต้น</span>
+                <div class="pricing-plan__price-main"><strong>479,000</strong><span>บาท</span></div>
+                <p class="pricing-plan__price-context">ชำระครั้งเดียว</p>
+              </div>
+              <ul class="pricing-plan__features">
+                <li>POS / CRM / Customer / Sales</li>
+                <li>Quotation / Sales Order</li>
+                <li>Purchase / PR / PO / Supplier</li>
+                <li>Inventory / Warehouse / Coil / Sheet</li>
+                <li>Basic Production / Internal Work Management</li>
+                <li>Dashboard / Report / User / Permission</li>
+              </ul><a class="button button-quiet pricing-plan__cta" href="#contact">ขอใบเสนอราคา <span
+                  aria-hidden="true">↗</span></a>
+            </article>
+            <article class="pricing-plan pricing-plan--enterprise is-recommended reveal">
+              <div class="pricing-plan__recommended"><span class="pricing-plan__recommend-text">รวม Add-on 3
+                  กลุ่ม</span><span class="pricing-plan__recommend-icon" aria-hidden="true">✓</span></div>
+              <div class="pricing-plan__head">
+                <div>
+                  <h3>Business</h3><span class="pricing-plan__chip">License</span>
+                </div>
+              </div>
+              <p class="pricing-plan__summary">เหมาะสำหรับโรงงานที่ต้องการเชื่อมงานหลักและงานปฏิบัติการในระบบเดียว</p>
+              <div class="pricing-plan__price"><span class="pricing-plan__price-label">ราคาเริ่มต้น</span>
+                <div class="pricing-plan__price-main"><strong>709,000</strong><span>บาท</span></div>
+                <p class="pricing-plan__price-context">ชำระครั้งเดียว</p>
+              </div>
+              <ul class="pricing-plan__features">
+                <li>ทุกฟังก์ชันใน Starter</li>
+                <li>Maintenance + Asset</li>
+                <li>Logistics + Logistics App</li>
+                <li>Factory + Factory App</li>
+              </ul><a class="button button-primary pricing-plan__cta" href="#contact">ขอใบเสนอราคา <span
+                  aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+          <p class="pricing-panel-footnote">ค่าติดตั้งและตั้งค่าระบบคิดแยกตามแพ็กเกจ · ไม่รวม Hosting / Server /
+            Infrastructure · รวม MA ปีแรก และเริ่มคิดค่าบำรุงรักษาระบบตั้งแต่ปีที่ 2 ตามข้อตกลงบริการ · Support
+            ตามขอบเขตบริการ</p>
+        </div>
+      </div>
+      <div class="pricing-comparison-intro pricing-module-intro">
+        <div>
+          <h3>เพิ่มเฉพาะโมดูลที่ต้องการ</h3>
+          <p>Starter สามารถเลือก Add-on เพิ่มได้ 3 กลุ่ม</p>
+        </div>
+      </div>
+      <div class="addons-grid pricing-module-grid">
+        <article class="addons-card reveal">
+          <h3>Maintenance + Asset</h3>
+          <p class="pricing-module-description">ระบบบริหารงานซ่อมบำรุง เครื่องจักร และสินทรัพย์</p><small>เลือกเพิ่มจาก
+            Starter</small>
+          <ul class="addons-list">
+            <li><span>Subscription</span><strong>+2,000 บาท <small>/ เดือน</small></strong></li>
+            <li><span>License</span><strong>+60,000 บาท</strong></li>
+          </ul>
+        </article>
+        <article class="addons-card reveal">
+          <h3>Logistics + Logistics App</h3>
+          <p class="pricing-module-description">ระบบวางแผนและติดตามการจัดส่ง พร้อมแอปสำหรับงานขนส่ง</p>
+          <small>เลือกเพิ่มจาก Starter</small>
+          <ul class="addons-list">
+            <li><span>Subscription</span><strong>+3,000 บาท <small>/ เดือน</small></strong></li>
+            <li><span>License</span><strong>+90,000 บาท</strong></li>
+          </ul>
+        </article>
+        <article class="addons-card reveal">
+          <h3>Factory + Factory App</h3>
+          <p class="pricing-module-description">ระบบบริหารงานผลิตหน้างาน Work Order, Production Tracking
+            และการอัปเดตสถานะผ่าน Factory App</p><small>เลือกเพิ่มจาก Starter</small>
+          <ul class="addons-list">
+            <li><span>Subscription</span><strong>+3,000 บาท <small>/ เดือน</small></strong></li>
+            <li><span>License</span><strong>+90,000 บาท</strong></li>
+          </ul>
+        </article>
+      </div>
+      <p class="pricing-addon-note">Basic Production รวมใน Starter สำหรับติดตามการผลิตพื้นฐาน · Factory + Factory App
+        เพิ่ม Work Order, Production Tracking และงานหน้างาน</p>
+      <div class="pricing-notes">
+        <p>Business คุ้มกว่า: ประหยัด 1,000 บาท/เดือน หรือ 10,000 บาทสำหรับ License เมื่อเทียบกับ Starter + Add-on ครบ
+        </p>
+        <p>ราคาไม่รวม VAT · Data Migration, Integration และงานพัฒนาเฉพาะประเมินเพิ่มเติม ·
+          เงื่อนไขบริการเป็นไปตามใบเสนอราคาและข้อตกลง</p>
+      </div>
+    </section>
+    <section class="section getting-started" id="getting-started">
+      <div class="section-shell">
+        <div class="section-heading reveal"><span class="eyebrow">A PRACTICAL START</span>
+          <h2>เริ่มวางระบบจากกระบวนการจริง<br />ของธุรกิจเมทัลชีท</h2>
+          <p>ทีมงานช่วยทำความเข้าใจ Workflow ข้อมูลสินค้า และขอบเขตที่เกี่ยวข้อง เพื่อวางแนวทางเริ่มต้น MINT METAL
+            ให้เหมาะกับองค์กร</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card reveal"><span>1</span>
+            <h3>ทำความเข้าใจกระบวนการ</h3>
+            <p>พูดคุยงานขาย จัดซื้อ คลังสินค้า การผลิต และการส่งมอบ</p>
+          </article>
+          <article class="step-card reveal"><span>2</span>
+            <h3>ดูข้อมูลสินค้าและ Order</h3>
+            <p>พิจารณารายละเอียดวัตถุดิบ Coil / Sheet และสเปกที่ใช้ในแต่ละ Order</p>
+          </article>
+          <article class="step-card reveal"><span>3</span>
+            <h3>กำหนดขอบเขตและ Package</h3>
+            <p>พิจารณา Core ERP, Business และรูปแบบ Subscription หรือ License</p>
+          </article>
+          <article class="step-card reveal"><span>4</span>
+            <h3>เตรียมข้อมูลก่อนเริ่ม</h3>
+            <p>เตรียมข้อมูลลูกค้า สินค้า วัตถุดิบ และขั้นตอนทำงานตามขอบเขตที่ตกลง</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section section-shell faq-section" id="faq">
+      <div class="faq-intro reveal"><span class="eyebrow">QUICK ANSWERS</span>
+        <h2>คำถามเกี่ยวกับ MINT METAL</h2>
+        <p>ข้อมูลเบื้องต้นเกี่ยวกับการใช้งาน ERP สำหรับธุรกิจเมทัลชีท</p><a class="text-link"
+          href="mailto:sale@alexiasoft.co?subject=สอบถาม%20MINT%20METAL">ถามทีมงานโดยตรง <span
+            aria-hidden="true">→</span></a>
+      </div>
+      <div class="faq-list reveal">
+        <details id="faq-subscription-license">
+          <summary aria-controls="faq-answer-subscription-license">Subscription กับ License ต่างกันอย่างไร?<span
+              aria-hidden="true">+</span></summary>
+          <div id="faq-answer-subscription-license">
+            <p>Subscription เลือกชำระรายเดือนหรือรายปีได้ โดยแพ็กเกจรายปีประหยัดเทียบเท่า 2 เดือน รวม Cloud Hosting,
+              Backup, MA และ Support ตามขอบเขตบริการ ส่วน License เป็นการซื้อสิทธิ์ใช้งานตามสัญญา ไม่รวม Hosting /
+              Server / Infrastructure โดยรวม MA ปีแรก และเริ่มคิด MA ตั้งแต่ปีที่ 2 ตามข้อตกลงบริการ</p>
+          </div>
+        </details>
+        <details id="faq-starter-business">
+          <summary aria-controls="faq-answer-starter-business">Starter กับ Business ต่างกันอย่างไร?<span
+              aria-hidden="true">+</span></summary>
+          <div id="faq-answer-starter-business">
+            <p>Starter คือ Core ERP ส่วน Business รวม Starter กับ 3 กลุ่ม Add-on ได้แก่ Maintenance + Asset, Logistics +
+              Logistics App และ Factory + Factory App เหมาะกับโรงงานที่ต้องการเชื่อมงานปฏิบัติการ</p>
+          </div>
+        </details>
+        <details id="faq-starter-addons">
+          <summary aria-controls="faq-answer-starter-addons">Starter สามารถซื้อ Add-on เพิ่มได้ไหม?<span
+              aria-hidden="true">+</span></summary>
+          <div id="faq-answer-starter-addons">
+            <p>ได้ โดยเลือกเพิ่ม Maintenance + Asset, Logistics + Logistics App หรือ Factory + Factory App ส่วน Business
+              รวม Add-on ทั้ง 3 กลุ่มแล้ว</p>
+          </div>
+        </details>
+        <details id="faq-installation-customize">
+          <summary aria-controls="faq-answer-installation-customize">ค่าติดตั้งและ Customize คิดอย่างไร?<span
+              aria-hidden="true">+</span></summary>
+          <div id="faq-answer-installation-customize">
+            <p>ค่าติดตั้งและตั้งค่าระบบคิดแยกจากราคาแพ็กเกจ ส่วน Customize, Integration, Data Migration
+              และงานพัฒนาเฉพาะประเมินตามขอบเขตโครงการและยืนยันในใบเสนอราคา</p>
+          </div>
+        </details>
+        <details id="faq-user-branch-warehouse">
+          <summary aria-controls="faq-answer-user-branch-warehouse">ถ้าต้องการเพิ่ม User / Branch / Warehouse
+            คิดอย่างไร?<span aria-hidden="true">+</span></summary>
+          <div id="faq-answer-user-branch-warehouse">
+            <p>หากต้องการเพิ่มผู้ใช้ สาขา หรือคลัง สามารถติดต่อฝ่ายขายเพื่อประเมินตามขอบเขตการใช้งาน</p>
+          </div>
+        </details>
+        <details id="faq-metal-sheet-scope">
+          <summary aria-controls="faq-answer-metal-sheet-scope">รองรับสินค้าและลักษณะงานของโรงงานเมทัลชีทหรือไม่?<span
+              aria-hidden="true">+</span></summary>
+          <div id="faq-answer-metal-sheet-scope">
+            <p>MINT METAL ออกแบบมาสำหรับงานเมทัลชีท ครอบคลุมลูกค้าและงานขาย ใบเสนอราคาและคำสั่งขาย จัดซื้อ คลัง Coil /
+              Sheet และการผลิตพื้นฐาน พร้อมเลือกใช้โมดูล Factory, Logistics หรือ Maintenance เพิ่มได้</p>
+          </div>
+        </details>
+      </div>
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="contact-orb orb-a"></div>
+      <div class="contact-orb orb-b"></div>
+      <div class="section-shell contact-inner reveal"><span class="eyebrow">READY WHEN YOU ARE</span>
+        <h2>พร้อมเชื่อมทุกขั้นตอนของโรงงาน<br>ไว้ในระบบเดียวแล้วหรือยัง?</h2>
+        <p>เริ่มต้นวางระบบ MINT METAL เพื่อเชื่อมงานขาย จัดซื้อ<br>คลังสินค้า การผลิต
+          และการส่งมอบให้ทำงานจากข้อมูลชุดเดียว</p>
+        <div class="contact-actions"><a class="button button-light"
+            href="mailto:sale@alexiasoft.co?subject=ขอ%20Demo%20MINT%20METAL">ขอ Demo <span
+              aria-hidden="true">↗</span></a><a class="button button-outline-light" href="tel:+66616975959">ฝ่ายขาย /
+            ติดต่อเรา</a></div>
+        <div class="contact-mail">หรือส่งอีเมล <a href="mailto:sale@alexiasoft.co">sale@alexiasoft.co</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-main">
+      <div>
+        <a class="brand footer-brand" href="#top" aria-label="MINT METAL หน้าแรก"><img
+            src="assets/images/mintmetal-logo.png" alt="MINT METAL" /><span class="brand-by">by AlexiaSoft</span></a>
+        <p>MINT METAL ERP สำหรับธุรกิจและโรงงาน Metal Sheet</p>
+      </div>
+      <div class="footer-links">
+        <a href="#workflow">ภาพรวมระบบ</a><a href="#features">ความสามารถ</a><a href="#pricing">ราคา</a><a
+          href="#getting-started">เริ่มใช้งาน</a><a href="privacy.html">นโยบายความเป็นส่วนตัว</a>
+        <a href="terms.html">ข้อตกลงและเงื่อนไข</a>
+      </div>
+      <div class="footer-contact">
+        <b>คุยกับทีมงาน</b><a href="mailto:sale@alexiasoft.co">sale@alexiasoft.co</a><a
+          href="tel:+66616975959">061-697-5959</a>
+        <a href="https://alexiasoft.co/" target="_blank" rel="noopener noreferrer">เว็บไซต์ AlexiaSoft ↗</a>
+      </div>
+    </div>
+    <div class="section-shell footer-bottom">
+      <span>© <span id="year">2026</span> AlexiaSoft Co., Ltd.</span><span>MINT METAL · ERP for Metal Sheet
+        Manufacturing</span>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
